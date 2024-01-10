@@ -2,8 +2,8 @@ pipeline {
       agent any
       stages {
             stage('Init') {
-                  steps {
-                        echo 'Hi, this is samara 
+                  steps 
+                        echo 'Hi, this is samara' 
                   }
             }
             stage('Build') {
