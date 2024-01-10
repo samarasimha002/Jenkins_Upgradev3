@@ -6,11 +6,6 @@ pipeline {
                         echo 'Hi, this is samara 
                   }
             }
-            stage('Testing') {
-                  steps {
-                        echo "unit testing"
-                  }
-            }
             stage('Build') {
                   steps {
                         echo 'Building Sample Maven Project'
