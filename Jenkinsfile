@@ -17,6 +17,11 @@ pipeline {
                         echo "Deploying in Staging Area"
                   }
             }
+            stage(' Auto Testing') {
+                  steps {
+                        echo "testing Area"
+                  }
+            }      
             stage('Deploy Production') {
                   steps {
                         echo "Deploying in Production Area"
