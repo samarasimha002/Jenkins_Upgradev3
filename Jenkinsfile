@@ -2,11 +2,9 @@ pipeline {
       agent any
       stages {
             stage('Init') {
-                  steps
-                  }
-            }
-             echo 'Hi, this is samara '
-             echo 'We are Starting the Testing'
+                  steps {
+                        echo 'Hi, this is samara '
+                        echo 'We are Starting the Testing'
                   }
             }
             stage('Build') {
@@ -19,15 +17,6 @@ pipeline {
                         echo "Deploying in Staging Area"
                   }
             }
-            stage(' Auto Testing') {
-                  steps {
-                        echo "testing Area"
-                  }
-            }      
             stage('Deploy Production') {
                   steps {
-                        echo "Deploying in Production Area"
-                  }
-            }
-      }
-}
+                        echo "Deploying in Production Area
